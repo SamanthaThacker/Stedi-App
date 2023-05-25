@@ -1,12 +1,12 @@
 const express =require('express');
 const app = express();
-
-app.get('/', (req,res) => {
-    res.send("Hello Browser")
+app.get('/samantha', (req,res) => {
+    res.send("Hello Samantha!")
 });
 
-app.get('/samantha', (req,res) => {
-    res.send("Hello Samantha")
+app.get('/', (req,res) => {
+    
+    res.send("Hello Browser")
 });
 
 app.listen(3000, ()=>{
